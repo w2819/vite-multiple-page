@@ -13,7 +13,7 @@ const routes = [
 ];
 
 const router = createRouter({
-    history: createWebHistory('/about'),
+    history: createWebHistory('/nested'),
     routes: routes as RouteRecordRaw[],
     strict: true,
 });

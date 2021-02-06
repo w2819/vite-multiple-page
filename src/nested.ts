@@ -1,5 +1,7 @@
 import { createApp } from 'vue';
 import App from './App.vue';
+import { setupRouter } from './router';
 
-createApp(App, {title: 'nested'}).mount('#app');
-//
+const app = createApp(App, {title: 'nested'});
+setupRouter(app);
+app.mount('#app');
